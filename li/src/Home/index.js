@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Container from '../component/container.js'
+import Container from '../component/container.js';
+import Other from './other.js'
 
 
 class Home extends Component {
    tiao(){
-       alert('a')
+    Other.open()
    }
    render(){
     let { tiao } = this;

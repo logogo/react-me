@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import { bindActionCreators } from 'redux';
 import acts from './reducer/action'
 import Exam from './component/exam.js'
+import MeRef from './component/meRef.js'
 
 class App extends Component {
     constructor(props){
@@ -19,7 +20,7 @@ class App extends Component {
         })
     }
     componentDidMount(){
-        this.props.actions.acts()//异步
+        //this.props.actions.acts()//异步
     }
     render(){
         let { changeName } = this;
@@ -34,6 +35,7 @@ class App extends Component {
                     changeName(this)
                 }}>按钮</button>
                 <Exam/>
+                <MeRef/>
             </div>
         )
     }

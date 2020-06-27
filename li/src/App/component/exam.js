@@ -9,7 +9,7 @@ const Exam = () => {
         }, 3000);
       };
     useEffect(() => {
-    counterRef.current = counter;
+      counterRef.current = counter;
     });
     return (
       <div>
