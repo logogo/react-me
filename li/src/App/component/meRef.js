@@ -13,7 +13,6 @@ export default function(){
         timerId.current = setInterval(()=>{
             setCount(count=>count+1)
         },1000)
-        console.log(counter)
         dispatch({
             type: 'acts',
             data: 1111

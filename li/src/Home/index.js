@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Container from '../component/container.js';
 import Other from './other.js'
+import Hoc from '../component/Hoc.js'
 
 
 class Home extends Component {
@@ -16,8 +17,9 @@ class Home extends Component {
                 <div>1111</div>
                 <div>1111</div>
                 <div>1111</div>
+                <div>{this.props.name}/{this.props.age}</div>
             </Container>)
    }
 }
 
-export default Home;
+export default Hoc(Home);
